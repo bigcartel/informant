@@ -1,4 +1,4 @@
-== Informant
+= Informant
 
 The Informant spies on your forms and warns people if they try to leave a form with unsaved changes.
 
