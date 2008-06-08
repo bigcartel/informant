@@ -8,8 +8,8 @@ Learn more at: http://indielabs.com/entries/the-informant/
 
 Simply include Prototype 1.6+ and The Informant.
 
-<script src="prototype.js" type="text/javascript"></script>
-<script src="informant.js" type="text/javascript"></script>
+  <script src="prototype.js" type="text/javascript"></script>
+  <script src="informant.js" type="text/javascript"></script>
 
 View informant.js for customization options.
 
