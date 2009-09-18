@@ -1,14 +1,16 @@
 = Informant
 
-The Informant spies on your forms and warns people if they try to leave a form with unsaved changes.
+Have you ever been filling out a form in one of those fancy-pants "Web 2.0" apps, when you stumble upon a link to something else, perhaps a help article, and when you click it you lose all the info you just filled out? The Informant has, and frankly he's got no stomach for it.
 
-Check out the included demo.html, or learn more at: http://indielabs.com/entries/the-informant/
+The Informant now lives to prevent others from a similar fate. He watches your forms carefully, and if someone tries to leave the page with unsaved changes… well… let's just say they'll hear about it.
 
-== Usage
+== How can I get The Informant on my side?
 
-Simply include Prototype 1.6+ and The Informant.
+The Informant gets most of his strength from Arby Melts and Prototype 1.6+, so be sure to grab those. After that, just include these JavaScript vigilantes and let them handle the rest:
 
   <script src="prototype.js" type="text/javascript"></script>
   <script src="informant.js" type="text/javascript"></script>
+
+That's it. The streets of your app are now a little safer.
 
 View informant.js for customization options.

@@ -6,11 +6,9 @@
  The Informant spies on your forms and warns people if they try to leave
  a form that has been changed but not saved.
 
- Learn more at: http://indielabs.com/entries/the-informant/
-
  Requires Prototype 1.6+ : http://prototypejs.org
 
- Copyright (c) 2005-2008 Indie Labs, LLC. All rights reserved.
+ Copyright (c) 2005-2009 Indie Labs, LLC. All rights reserved.
 
  Permission is hereby granted, free of charge, to any person obtaining
  a copy of this software and associated documentation files (the
