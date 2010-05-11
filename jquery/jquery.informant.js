@@ -14,40 +14,26 @@
 	$.fn.informant = function(options) {	
 		options = $.extend($.fn.informant.defaults, options);
 		
-		var eventKey = 'beforeunload.informant';
-		var cacheKey = 'cache.informant';
-		var forms = [];
+		var inform = false;
 		
-		$(window).unbind(eventKey).bind(eventKey, function() {
-			var inform = false;
-			
-			$.each(forms, function(i, form) {			
-				if(form.data(cacheKey) != form.serialize()) {
-					inform = true;
-					return false;
-				}
-			});
-			
+		$(window).unbind(options.eventKey).bind(options.eventKey, function() {			
 			if(inform) {
 				return options.message;
 			}
 		});
 		
 		return this.each(function() {
-			var form = $(this);
-			
-			function cache() {
-				form.data(cacheKey, form.serialize());
-			}			
-				
-			form.submit(cache);
-			cache(form);
-			forms.push(form);				
+			$(this).change(function() {
+				inform = true;
+			}).submit(function() {
+				inform = false;
+			});
 		});
 	};
 	
 	$.fn.informant.defaults = {
-		message: 'All unsaved changes will be lost.'
+		message: 'All unsaved changes will be lost.',
+		eventKey: 'beforeunload.informant'
 	};
 
 })(jQuery);
