@@ -23,10 +23,15 @@
 		});
 		
 		return this.each(function() {
-			$(this).change(function() {
-				inform = true;
+			var form = $(this);
+			var before = form.serialize();
+			
+			form.change(function() {
+				var after = form.serialize();
+				inform = before != after;
 			}).submit(function() {
 				inform = false;
+				before = form.serialize()
 			});
 		});
 	};
