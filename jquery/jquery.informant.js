@@ -5,11 +5,11 @@
 		
 		var inform = false;
 		
-		window.onbeforeunload = function() {
+		$(window).on('beforeunload', function() {
 			if(inform) {
 				return options.message;
 			}
-		};
+		});
 		
 		return this.each(function() {
 			var form = $(this);
